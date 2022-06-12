@@ -6,7 +6,7 @@ public class Calculator {
         Operation mathOperation = Operation.convert(operation);
         if ((a == 0 || b == 0) && operation.equals("/")){
             return -1.0;
-        } else {
+        } else if (operation.matches("[+/*-]")){
             switch (mathOperation) {
                 case PLUS:
                     return a + b;
