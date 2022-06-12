@@ -19,6 +19,6 @@ public enum Operation {
                 return operation;
             }
         }
-        return Operation.valueOf("NO");
+        return null;
     }
 }
