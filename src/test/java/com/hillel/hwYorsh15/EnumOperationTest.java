@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import static com.hillel.hwYorsh15.Operation.*;
 
-public class OperationTest {
+public class EnumOperationTest {
 
     @Test
     public void testConvertPlus() {
