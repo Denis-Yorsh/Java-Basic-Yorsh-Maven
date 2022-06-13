@@ -4,7 +4,9 @@ public class Calculator {
 
     public Double calculate(double a, String operation, double b) {
         Operation mathOperation = Operation.convert(operation);
-        if ((a == 0 || b == 0) && operation.equals("/")){
+        if (operation == null) {
+            return -1.0;
+        } else if ((a == 0 || b == 0) && operation.equals("/")){
             return -1.0;
         } else if (operation.matches("[+/*-]")){
             switch (mathOperation) {

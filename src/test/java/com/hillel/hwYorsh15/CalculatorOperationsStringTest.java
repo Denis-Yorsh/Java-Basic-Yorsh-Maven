@@ -27,8 +27,16 @@ public class CalculatorOperationsStringTest {
     }
 
     @Test
+    public void testCalculateStringOperation1() {
+        double actual = calculator.calculate(500, "My name is Denis", 10);
+        Assert.assertEquals(-1, actual, 0.0);
+    }
+    /**
+     * (expected = NullPointerException.class)
+     */
+    @Test
     public void testCalculateStringNull() {
-        double actual = calculator.calculate(500, "null", 10);
+        double actual = calculator.calculate(500, null, 10);
         Assert.assertEquals(-1, actual, 0.0);
     }
 }
