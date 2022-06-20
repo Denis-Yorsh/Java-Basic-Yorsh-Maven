@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="com.hillel.hwYorsh15.EnumOperationTest" time="0.001" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="com.hillel.hwYorsh16.CalculatorDouble.CalculatorsZeroDoubleTest" time="0.027" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2021.3.2"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -64,10 +64,6 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.hillel.hwYorsh15.EnumOperationTest" name="testConvertMultiply" time="0.001"/>
-  <testcase classname="com.hillel.hwYorsh15.EnumOperationTest" name="testConvertPlus" time="0"/>
-  <testcase classname="com.hillel.hwYorsh15.EnumOperationTest" name="testConvertDivide" time="0"/>
-  <testcase classname="com.hillel.hwYorsh15.EnumOperationTest" name="testConvertDivideTwoSymbol" time="0"/>
-  <testcase classname="com.hillel.hwYorsh15.EnumOperationTest" name="testConvertDivideNull" time="0"/>
-  <testcase classname="com.hillel.hwYorsh15.EnumOperationTest" name="testConvertMinus" time="0"/>
+  <testcase classname="com.hillel.hwYorsh16.CalculatorDouble.CalculatorsZeroDoubleTest" name="testCalculatesStringNull" time="0.027"/>
+  <testcase classname="com.hillel.hwYorsh16.CalculatorDouble.CalculatorsZeroDoubleTest" name="testCalculateDivideIsZeros" time="0"/>
 </testsuite>
