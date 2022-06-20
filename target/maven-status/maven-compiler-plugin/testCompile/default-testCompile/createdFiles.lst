@@ -1,11 +1,14 @@
 com/hillel/hwYorsh16/CalkuiatorString/CalculatorsStringTest.class
-com/hillel/hwYorsh16/CalculatorDouble/CalculatorsNegativeNumberTest.class
+com/hillel/hwYorsh16/CalkuiatorString/CalculatorsZeroStringTest.class
 com/hillel/hwYorsh16/EnumOperationsTest.class
 com/hillel/hwYorsh15/CalculatorNegativeNumberTest.class
 com/hillel/hwYorsh15/EnumOperationTest.class
 com/hillel/hwYorsh16/CalculatorDouble/CalculatorsZeroTest.class
 com/hillel/hwYorsh15/CalculatorOperationsTest.class
-com/hillel/hwYorsh16/CalculatorDouble/CalculatorsTestZeroDouble.class
+com/hillel/hwYorsh15/CalculatorOperationsStringTest.class
+com/hillel/hwYorsh16/CalkuiatorString/CalculatorsNegativeNumberStringTest.class
+com/hillel/hwYorsh16/CalculatorDouble/CalculatorsNegativeNumberTest.class
+com/hillel/hwYorsh16/CalkuiatorString/CalculatorsOperationsStringTest.class
+com/hillel/hwYorsh16/CalculatorDouble/CalculatorsZeroDoubleTest.class
 com/hillel/hwYorsh16/CalculatorDouble/CalculatorsOperationsTest.class
 com/hillel/hwYorsh15/CalculatorZeroTest.class
-com/hillel/hwYorsh15/CalculatorOperationsStringTest.class
