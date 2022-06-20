@@ -1,0 +1,7 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+Java-Basic-Yorsh-Maven,com.hillel.hwYorsh16,Calculators,7,137,3,13,2,41,3,12,0,4
+Java-Basic-Yorsh-Maven,com.hillel.hwYorsh16,Operations,0,81,0,4,0,12,0,5,0,3
+Java-Basic-Yorsh-Maven,com.hillel.hwYorsh16,CalculatorException,0,4,0,0,0,2,0,1,0,1
+Java-Basic-Yorsh-Maven,com.hillel.hwYorsh16,CalculatorStart,3,0,0,0,1,0,1,0,1,0
+Java-Basic-Yorsh-Maven,com.hillel.hwYorsh15,Operation,0,81,0,4,0,12,0,5,0,3
+Java-Basic-Yorsh-Maven,com.hillel.hwYorsh15,Calculator,0,58,1,14,0,13,1,10,0,2

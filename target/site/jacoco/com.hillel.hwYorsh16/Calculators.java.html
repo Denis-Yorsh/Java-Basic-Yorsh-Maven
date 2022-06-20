@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Calculators.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">Java-Basic-Yorsh-Maven</a> &gt; <a href="index.source.html" class="el_package">com.hillel.hwYorsh16</a> &gt; <span class="el_source">Calculators.java</span></div><h1>Calculators.java</h1><pre class="source lang-java linenums">package com.hillel.hwYorsh16;
+
+<span class="fc" id="L3">public class Calculators {</span>
+
+    public static Double calculate(double a, String operation, double b)
+            throws NullPointerException, ArithmeticException {
+
+<span class="fc" id="L8">        Operations mathOperation = Operations.convert(operation);</span>
+<span class="fc" id="L9">        var result = -1.;</span>
+        try {
+<span class="pc bpc" id="L11" title="1 of 5 branches missed.">            switch (mathOperation) {</span>
+                case PLUS:
+<span class="fc" id="L13">                    result = a + b;</span>
+<span class="fc" id="L14">                    break;</span>
+                case MINUS:
+<span class="fc" id="L16">                    result = a - b;</span>
+<span class="fc" id="L17">                    break;</span>
+                case MULTIPLY:
+<span class="fc" id="L19">                    result = a * b;</span>
+<span class="fc" id="L20">                    break;</span>
+                case DIVIDE:
+<span class="fc" id="L22">                    result = a / b;</span>
+                    break;
+            }
+<span class="fc bfc" id="L25" title="All 2 branches covered.">            if (Double.isInfinite(result)) {</span>
+<span class="fc" id="L26">                throw (new ArithmeticException(&quot;INFINITE&quot;));</span>
+            }
+<span class="fc" id="L28">        } catch (NullPointerException e) {</span>
+<span class="fc" id="L29">            System.out.println(&quot;NPE &quot; + e.getMessage());</span>
+<span class="fc" id="L30">        } catch (ArithmeticException e) {</span>
+<span class="fc" id="L31">            System.out.println(&quot;ArithmeticException &quot; + e.getMessage());</span>
+<span class="fc" id="L32">        }</span>
+<span class="fc" id="L33">        return result;</span>
+    }
+
+    public static String calculate(String a, String operation, String b)
+            throws NullPointerException, ArithmeticException, CalculatorException {
+
+        try {
+<span class="pc bpc" id="L40" title="1 of 4 branches missed.">            if (a.matches(&quot;[a-zA-Z]&quot;) || b.matches(&quot;[a-zA-Z]&quot;)) {</span>
+<span class="fc" id="L41">                throw new CalculatorException(&quot;ERROR&quot;);</span>
+            }
+<span class="fc" id="L43">            Operations mathOperation = Operations.convert(operation);</span>
+<span class="fc" id="L44">            Double stringOne = Double.valueOf(a);</span>
+<span class="fc" id="L45">            Double stringTwo = Double.valueOf(b);</span>
+<span class="fc" id="L46">            return getResultDouble(stringOne, stringTwo, mathOperation);</span>
+
+<span class="fc" id="L48">        } catch (NullPointerException e) {</span>
+<span class="fc" id="L49">            System.out.println(&quot;NPE &quot; + e.getMessage());</span>
+<span class="nc" id="L50">        } catch (ArithmeticException e) {</span>
+<span class="nc" id="L51">            System.out.println(&quot;Arithmetic Exception &quot; + e.getMessage());</span>
+<span class="fc" id="L52">        } catch (CalculatorException e) {</span>
+<span class="fc" id="L53">            System.err.println(&quot;Calculator Exception &quot; + e.getMessage());</span>
+<span class="pc" id="L54">        }</span>
+<span class="fc" id="L55">        return String.valueOf(-1);</span>
+    }
+
+    private static String getResultDouble(Double stringOne, Double stringTwo, Operations mathOperation) {
+<span class="fc" id="L59">        var resultDouble = 0.;</span>
+<span class="pc bpc" id="L60" title="1 of 5 branches missed.">        switch (mathOperation) {</span>
+            case PLUS:
+<span class="fc" id="L62">                resultDouble = stringOne + stringTwo;</span>
+<span class="fc" id="L63">                break;</span>
+            case MINUS:
+<span class="fc" id="L65">                resultDouble = stringOne - stringTwo;</span>
+<span class="fc" id="L66">                break;</span>
+            case MULTIPLY:
+<span class="fc" id="L68">                resultDouble = stringOne * stringTwo;</span>
+<span class="fc" id="L69">                break;</span>
+            case DIVIDE:
+<span class="fc" id="L71">                resultDouble = stringOne / stringTwo;</span>
+                break;
+        }
+<span class="fc" id="L74">        return String.valueOf(resultDouble);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
